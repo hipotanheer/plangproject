@@ -87,6 +87,7 @@ def translate_message2(message):
     else:
         bot.reply_to(message, translation1[1])
 
+
 @bot.message_handler(commands=['addtranslation', 'добавитьперевод'])
 def addtranslation(message):
     user_id = message.from_user.id # get user ID
